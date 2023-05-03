@@ -1,12 +1,14 @@
-package com.example.architecture
+package com.example.architecture.view
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.architecture.presenter.LoginPresenter
+import com.example.architecture.contracts.LoginContract
 import com.example.architecture.databinding.ActivityLoginBinding
 
-class LoginActivity : AppCompatActivity(), LoginContract.View {
+class LoginActivity : AppCompatActivity(), LoginContract.LoginView {
 
     private lateinit var binding: ActivityLoginBinding
 

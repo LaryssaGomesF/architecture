@@ -1,6 +1,6 @@
-package com.example.architecture
+package com.example.architecture.contracts
 
-import com.example.architecture.mvp.BasePresenter
+import com.example.architecture.presenter.LoginPresenter
 import com.example.architecture.mvp.BaseView
 
 interface LoginContract {
@@ -8,7 +8,7 @@ interface LoginContract {
     /**
      * Nossa LoginActivity precisa implementar os métodos definidos abaixo
      */
-    interface View : BaseView<LoginPresenter> {
+    interface LoginView : BaseView<LoginPresenter> {
         fun displayErrorMessage()
         fun displaySucessToast()
         fun startHomeActivity()
@@ -17,7 +17,7 @@ interface LoginContract {
     /**
      * Nosso Presenter precisa implementar os seguintes métodos
      */
-    interface Presenter : BasePresenter {
+    interface Presenter {
         fun isLoginValid(userName: String, password : String)
     }
 }

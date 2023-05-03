@@ -1,6 +1,9 @@
-package com.example.architecture
+package com.example.architecture.presenter
 
-class LoginPresenter(private val view : LoginContract.View) : LoginContract.Presenter {
+import com.example.architecture.AuthUtils
+import com.example.architecture.contracts.LoginContract
+
+class LoginPresenter(private val view : LoginContract.LoginView) : LoginContract.Presenter {
 
 
     override fun isLoginValid(userName: String, password: String) {
@@ -16,7 +19,4 @@ class LoginPresenter(private val view : LoginContract.View) : LoginContract.Pres
         }
     }
 
-    override fun start() {
-
-    }
 }
