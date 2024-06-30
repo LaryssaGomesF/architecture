@@ -14,3 +14,5 @@ O repositório contém dois branches principais:
 - Tela de login simples.
 - Redirecionamento para uma tela principal após o login bem-sucedido.
 - Demonstração de como a lógica de negócios e a interface do usuário são separadas em diferentes camadas nas arquiteturas MVC e MVVM.
+
+![App-recording](https://github.com/LaryssaGomesF/architecture/blob/mvvm/videos/screen_recording.gif)
